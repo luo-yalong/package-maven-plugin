@@ -99,25 +99,9 @@ public class WinMojo extends AbstractMojo {
     @Parameter(property = "programArguments")
     private String programArguments;
 
-    /**
-     * 自定义参数：跳过
-     */
-/*    @Parameter(property = "skip")
-    private Boolean skip = false;*/
-
-
-
-
     @Override
     public void execute(){
         Log log = getLog();
-
-/*        //跳过插件
-        if(skip == true){
-            log.info("Packages win service are skipped");
-            log.info("");
-            return;
-        }*/
 
         try {
             //创建临时文件夹
